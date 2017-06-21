@@ -1,0 +1,235 @@
+.flex-container {
+  display: flex;
+  margin: 0 auto;
+}
+body {
+  font-size: 12px;
+}
+header {
+  width: 100%;
+  height: 5.3em;
+  display: flex;
+  display: block;
+  background-color: white;
+}
+header .flex-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.logo {
+  padding-left: 1.5rem;
+  align-items: center;
+  display: flex;
+}
+header .flex-container .logo img {
+  height: 6em;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.flex-container .logo span {
+  color: midnightblue;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: Cabin;
+  align-content: center;
+  padding-left: 0.5rem;
+  margin-bottom: 2rem;
+  display: inline-flex;
+}
+.logo p {
+  color: skyblue;
+  display: inline-flex;
+  font-size: 2rem;
+  font-family: Cabin;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.menu span {
+  display: flex;
+  display: inline-flex;
+  padding: 0.5rem;
+  color: rgb(66,68,66);
+  font-size: 1.2rem;
+  font-family: raleway;
+  padding-top: 1.2rem;
+  padding-right: 1rem;
+}
+.banner {
+  background-color: rgb(201,244,252);
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+}
+.banner img {
+  width: 60%;
+  height: 85%;
+  padding: 2.6rem 3.3rem 5rem 2rem;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  color: rgb(66,68,66);
+  text-align: left;
+  font-family: cabin;
+  justify-content: center;
+  padding-right: 3rem;
+}
+.banner-text h1{
+font-size: 4em;
+font-weight: bold;
+padding-bottom: 2rem;
+}
+.banner-text h3 {
+font-size: 2.7em;
+padding-bottom: 2rem;
+}
+.banner-text p {
+font-size: 2em;
+background-color: rgb(66,68,66);
+color: white;
+text-align: center;
+padding-top: 0.7rem;
+padding-bottom: 0.7rem;
+width: 100%
+}
+.main {
+  width: 100%;
+  display:flex;
+  margin-top: 5rem;
+}
+.main-left {
+  display: block;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  width: 60%;
+  font-family: raleway;
+  color: rgb(66,68,66);
+  text-align: left;
+}
+.main-left img {
+  width: 100%;
+  display: block;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+}
+.main-left h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.main-left h4 {
+  font-size: 1.2rem;
+  color: rgb(122,133,135);
+  padding-bottom: 1rem;
+}
+.main-left p {
+  color: rgb(122,133,135);
+  font-size: 1rem;
+}
+.side-stories {
+  display:flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%
+}
+.orientation {
+  display: flex;
+  padding-bottom: 1rem;
+}
+.orientation img {
+width: 35%;
+height: 35%;
+}
+.orientation-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+  font-family: raleway;
+  padding-left: 1rem;
+}
+.orientation-text h3 {
+  color: rgb(66,68,66);
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.orientation-text h5 {
+  font-size: 1.5em;
+  padding-bottom: 0.5rem;
+  color: rgb(122,133,135);
+}
+.orientation-text p {
+  font-size: 1.2em;
+  padding-top: 0.5rem;
+  color: rgb(0,85,244);
+}
+.campus {
+  display: flex;
+  padding-bottom: 1rem;
+}
+.campus img {
+width: 35%;
+height: 35%;
+display: inline-block;
+}
+.campus-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+  font-family: raleway;
+  padding-left: 1rem;
+}
+  .campus-text h3 {
+    color: rgb(66,68,66);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  .campus-text h5 {
+    font-size: 1.5em;
+    padding-bottom: 0.5rem;
+    color: rgb(122,133,135);
+  }
+  .campus-text p {
+    font-size: 1.2em;
+    padding-top: 0.5rem;
+    color: rgb(0,85,244);
+  }
+  .guest {
+    display: flex;
+  }
+  .guest img {
+  width: 35%;
+  height: 35%;
+  display: inline-block;
+  }
+  .guest-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    font-family: raleway;
+    padding-left: 1rem;
+  }
+    .guest-text h3 {
+      color: rgb(66,68,66);
+      font-size: 2.5em;
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
+    .guest-text h5 {
+      font-size: 1.5em;
+      padding-bottom: 0.5rem;
+      color: rgb(122,133,135);
+    }
+    .guest-text p {
+      font-size: 1.2em;
+      padding-top: 0.5rem;
+      color: rgb(0,85,244);
+    }
