@@ -102,7 +102,7 @@ width: 100%
   display: block;
   margin-left: 2rem;
   margin-right: 1.5rem;
-  width: 60%;
+  width: 70%;
   font-family: raleway;
   color: rgb(66,68,66);
   text-align: left;
@@ -130,12 +130,12 @@ width: 100%
 .side-stories {
   display:flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 40%;
-  height: 100%
+
 }
 .orientation {
   display: flex;
-  padding-bottom: 1rem;
 }
 .orientation img {
 width: 35%;
@@ -168,7 +168,6 @@ height: 35%;
 }
 .campus {
   display: flex;
-  padding-bottom: 1rem;
 }
 .campus img {
 width: 35%;
@@ -233,3 +232,126 @@ display: inline-block;
       padding-top: 0.5rem;
       color: rgb(0,85,244);
     }
+
+.classes {
+  background-color: rgb(201,244,252);
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.title {
+  font-family: cabin;
+  font-weight: bold;
+  font-size: 3.5em;
+  color: rgb(66,68,66);
+  justify-content: center;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.class-blocks {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.block {
+  display: inline-block;
+  justify-content: center;
+  width: 30%;
+}
+.block .image {
+width: 100%;
+}
+
+.description {
+  display: block;
+  background-color: white;
+  text-align: left;
+  color: rgb(66,68,66);
+  font-size: 1.5em;
+  font-family: raleway;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+}
+.description h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(0,34,99);
+}
+.thesis {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.thesis-left {
+  width: 60%;
+  font-family: raleway;
+  text-align: left;
+  display: block;
+  justify-content: flex-start;
+}
+.thesis-left video {
+  width: 100%;
+  display: block;
+  padding: 0rem 3.3rem 1.5rem 2rem;
+  justify-content: flex-start;
+}
+
+.thesis-left h1 {
+  color: rgb(66,68,66);
+  font-weight: bold;
+  font-size: 2.3em;
+  padding-bottom: 0.8rem;
+  padding-left: 2rem;
+}
+.thesis-left p {
+  color: rgb(122,133,135);
+  font-size: 1.5em;
+  line-height: 1.5;
+  padding-left: 2rem;
+  width: 100%;
+}
+.thesis-right {
+  display: flex;
+  width: 30%;
+  padding: 0rem 4rem;
+
+}
+.blocks {
+  display: block;
+}
+.blocks img {
+  width: 45%;
+  height: 35%;
+}
+.block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-family: raleway;
+  line-height: 1.2;
+}
+.block-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(66,68,66);
+}
+.block-text p {
+  font-size: 1.2em;
+  color: rgb(122,133,135);
+}
+footer {
+  color: rgb(122,133,135);
+  font-family: raleway;
+  font-weight: lighter;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 2rem;
+}
