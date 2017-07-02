@@ -235,8 +235,14 @@ display: inline-block;
 
 .classes {
   background-color: rgb(201,244,252);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.classes .class-blocks {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-wrap; wrap;
   margin-top: 1.5rem;
 }
 .title {
@@ -249,28 +255,19 @@ display: inline-block;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-.class-blocks {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
+
 .block {
-  display: inline-block;
-  justify-content: center;
+  flex-direction: column;
+  display:flex;
   width: 30%;
-}
-.block .image {
-width: 100%;
+  flex-wrap: wrap;
 }
 
 .description {
-  display: block;
   background-color: white;
   text-align: left;
   color: rgb(66,68,66);
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: raleway;
   padding: 0.5rem 1rem;
   line-height: 1.5;
