@@ -28,7 +28,7 @@ header .flex-container .logo img {
   margin-bottom: 2rem;
 }
 .flex-container .logo span {
-  color: midnightblue;
+  color: rgb(1,3,86);
   font-weight: 700;
   font-size: 2rem;
   font-family: Cabin;
@@ -38,7 +38,7 @@ header .flex-container .logo img {
   display: inline-flex;
 }
 .logo p {
-  color: skyblue;
+  color: rgb(135,206,235);
   display: inline-flex;
   font-size: 2rem;
   font-family: Cabin;
@@ -54,6 +54,9 @@ header .flex-container .logo img {
   font-family: raleway;
   padding-top: 1.2rem;
   padding-right: 1rem;
+}
+.menu span:hover{
+  color: rgb(135,206,235);
 }
 .banner {
   background-color: rgb(201,244,252);
@@ -92,6 +95,12 @@ text-align: center;
 padding-top: 0.7rem;
 padding-bottom: 0.7rem;
 width: 100%
+
+}
+.banner-text p:hover {
+  background-color: rgb(114,114,112);
+  transition-duration: 0.7s;
+
 }
 .main {
   width: 100%;
@@ -122,6 +131,7 @@ width: 100%
   font-size: 1.2rem;
   color: rgb(122,133,135);
   padding-bottom: 1rem;
+  line-height: 1.5;
 }
 .main-left p {
   color: rgb(122,133,135);
@@ -132,10 +142,14 @@ width: 100%
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
-
 }
+
 .orientation {
   display: flex;
+}
+.orientation:hover {
+  background-color: rgb(231,232,229);
+  transition-duration: 0.7s;
 }
 .orientation img {
 width: 35%;
@@ -169,6 +183,10 @@ height: 35%;
 .campus {
   display: flex;
 }
+.campus:hover {
+  background-color: rgb(231,232,229);
+  transition-duration: 0.7s;
+}
 .campus img {
 width: 35%;
 height: 35%;
@@ -201,6 +219,10 @@ display: inline-block;
   }
   .guest {
     display: flex;
+  }
+  .guest:hover {
+    background-color: rgb(231,232,229);
+    transition-duration: 0.7s;
   }
   .guest img {
   width: 35%;
@@ -238,12 +260,8 @@ display: inline-block;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-}
-.classes .class-blocks {
-  display: flex;
   width: 100%;
-  flex-wrap; wrap;
-  margin-top: 1.5rem;
+
 }
 .title {
   font-family: cabin;
@@ -253,16 +271,39 @@ display: inline-block;
   justify-content: center;
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+}
+.class-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem 2rem;
+  justify-content: center;
 }
 
 .block {
   flex-direction: column;
-  display:flex;
+  align-content: center;
+  justify-content: space-between;
   width: 30%;
-  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: block;
 }
+.block:hover{
+  box-shadow: 0 0 1em gray;
+  transition-duration: 0.3s;
+}
+.block img {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 
+}
+.class-blocks .block {
+  justify-content: space-between;
+  align-content: space-between;
+}
 .description {
   background-color: white;
   text-align: left;
@@ -289,12 +330,11 @@ display: inline-block;
   font-family: raleway;
   text-align: left;
   display: block;
-  justify-content: flex-start;
 }
 .thesis-left video {
   width: 100%;
   display: block;
-  padding: 0rem 3.3rem 1.5rem 2rem;
+  padding: 1.5rem 3.3rem 1.5rem 2rem;
   justify-content: flex-start;
 }
 
@@ -314,32 +354,51 @@ display: inline-block;
 }
 .thesis-right {
   display: flex;
-  width: 30%;
-  padding: 0rem 4rem;
+  width: 35%;
+  display: block;
+  flex-direction: column;
+}
+.thesis-right .highlights {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.highlights {
+  padding-top:1.4rem;
+}
+.highlights img {
+  margin-left: 4rem;
+  width: 35%;
+  height: 35%;
+  display: flex;
+}
+.highlights img:hover {
+  box-shadow: 0 0 1em gray;
+  transition-duration: 0.3s;
+}
+.thesis-right .highlight-texts {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+}
+.highlight-texts {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  font-family: raleway;
+  display: inline-block;
 
 }
-.blocks {
-  display: block;
-}
-.blocks img {
-  width: 45%;
-  height: 35%;
-}
-.block-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  font-family: raleway;
-  line-height: 1.2;
-}
-.block-text h1 {
+.highlight-texts h1 {
   font-size: 2em;
   font-weight: bold;
+  line-height: 1.5;
   color: rgb(66,68,66);
 }
-.block-text p {
-  font-size: 1.2em;
+.highlight-texts p {
+  font-size: 1rem;
   color: rgb(122,133,135);
 }
 footer {
@@ -349,6 +408,7 @@ footer {
   font-size: 1.2em;
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  margin: 3rem 1rem 0rem 1rem;
   padding: 2rem;
+  border-top: solid rgb(122,133,135) 0.5px;
 }
